@@ -5,7 +5,7 @@ medio de yields entre tipos "think" y "message"
 */
 import { Ollama } from 'ollama';
 import type { Message, ToolCall } from 'ollama';
-import { tools, executeTool } from './tools.index';
+import { tools, executeTool } from '@/functions/tools.index';
 
 const ollama = new Ollama()
 
