@@ -42,7 +42,7 @@ export const useMessageStore = create<MessageStore>()((set, get) => ({
     // iterador principal del messages generator
     for await (const chunk of generateMessage(history, get().model, get().think)){
       // manejo del think
-      if (chunk.type === "think" && get().think){
+      if (chunk.type === "thinking" && get().think){
         think += chunk.content
         // actualizamos al nuevo valor
         set((state) => {
